@@ -127,3 +127,39 @@ input {
 .weather-icon img {
     width: 180px;
 }
+
+
+/* ====== Responsive For Mobile ====== */
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .weather {
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(3 , 1fr);
+        width: 250px;
+        height: 250px;
+    }
+
+    .temp {
+        font-size: 30px;
+        margin-top: 12px;
+    }
+
+    .climate {
+        font-size: 20px;
+    }
+
+    .weather-icon {
+        grid-area: 3 / 1 / 4 / 3 ;
+        text-align: center;
+        vertical-align: 20px;
+        margin-top: -20px;
+    }
+    .weather-icon img {
+        width: 110px;
+    }
+}
+
+
